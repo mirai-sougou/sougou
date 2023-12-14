@@ -18,7 +18,7 @@ h2 {
   font-size: 23px;
 }
 .wrapper {
-  max-width: 950px;
+  max-width: 1200px;
   /* 中央寄せにする */
   margin: 0 auto;
   padding-left: 18px;
@@ -26,11 +26,16 @@ h2 {
 }
 main {
   padding: 10px;
-  background-color: #848484;
+  background-color: #000055;
+  text-align: center;
+  color: white;
 }
 p {
   font-size: 18px;
   padding: 10px;
+}
+.purple {
+  background-color: #9370db;
 }
 
 /* 画像を2列に並べる
