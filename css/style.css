@@ -37,7 +37,9 @@ p {
 .purple {
   background-color: #9370db;
 }
-
+body{
+  background-color:#03243D ;
+}
 /* 画像を2列に並べる
   #box {
     display: grid;
