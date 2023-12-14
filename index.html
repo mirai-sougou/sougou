@@ -43,7 +43,21 @@
   <footer>
     <p>Copyright©Sapporo Joho Mirai</p>
   </footer>
-  <script src="script/script.js"></script>
+  <script type="text/javascript">
+    jQuery(document).snowfall({
+            flakeCount : 30, //量、数
+        flakeColor : '#FFF', //色
+        flakeIndex : 1, //重なり
+        minSize : 1, //最小サイズ
+        maxSize : 10, //最大サイズ
+        minSpeed : 1, //最低スピード
+        maxSpeed : 3, //最大スピード
+        round : true, //形を丸くする
+        shadow : false //形に影をつける
+        //collection : 'div' //要素に積もらせる
+        //image : 'xxx.png' //オリジナル画像 
+    });
+    </script>
 </body>
 <script>jQuery(document).snowfall();</script>
 
