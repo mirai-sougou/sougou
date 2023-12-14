@@ -1,64 +1,73 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.min.js"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ポートフォリオ</title>
+    <link href="css/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/ham.css" />
+    <meta
+      name="google-site-verification"
+      content="jZK94A-9ZnrZV0jVGYO72HrycaLX65ZacUyzQbxPLEI"
+    />
+    <script type="text/javascript" src="js/snowfall.min.jquery.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ポートフォリオ</title>
-  <link href="css/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/ham.css" />
-  <meta name="google-site-verification" content="jZK94A-9ZnrZV0jVGYO72HrycaLX65ZacUyzQbxPLEI" />
-  <script type="text/javascript" src="js/snowfall.min.jquery.js"></script>
-</head>
-
-<body>
-  <header>
-    <div class="d-flex align-items-center justify-content-between">
-      <div class="d-flex align-items-center">
-        <img src="images/Christmasロゴ5 1.png" alt="" class="me-2 p-4" style="width: 150px;">
+  <body>
+    <header>
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center">
+          <img
+            src="images/Christmasロゴ5 1.png"
+            alt=""
+            class="me-2 p-4"
+            style="width: 150px"
+          />
+        </div>
+        <div class="d-flex ml-2 p-2">
+          <button type="button" class="btn btn-light me-2">ボタン1</button>
+          <button type="button" class="btn btn-light">ボタン2</button>
+        </div>
       </div>
-      <div class="d-flex ml-2 p-2">
-        <button type="button" class="btn btn-light me-2">ボタン1</button>
-        <button type="button" class="btn btn-light">ボタン2</button>
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center"></div>
+        <div class="d-flex p-2">
+          <button type="button" class=" me-2">ボタン1</button>
+          <button type="button" class="">ボタン2</button>
+        </div>
       </div>
+    </header>
+    <div class="bg-primary">　</div>
+    <div class="wrapper">
+      <main>あ</main>
     </div>
-    <div class="d-flex align-items-center justify-content-between">
-      <div class="d-flex align-items-center">
-      </div>
-      <div class="d-flex p-2">
-        <button type="button" class="btn btn-light me-2">ボタン1</button>
-        <button type="button" class="btn btn-light">ボタン2</button>
+    <div class="hr"></div>
 
-      </div>
-    </div>
-  </header>
-<div class="bg-primary">　</div>
-  <div class="wrapper">
-    <main>あ</main>
-  </div>
-  <div class="hr"></div>
-
-  <footer>
-    <p>Copyright©Sapporo Joho Mirai</p>
-  </footer>
-  <script type="text/javascript">
-    jQuery(document).snowfall({
-            flakeCount : 30, //量、数
-        flakeColor : '#FFF', //色
-        flakeIndex : 1, //重なり
-        minSize : 1, //最小サイズ
-        maxSize : 10, //最大サイズ
-        minSpeed : 1, //最低スピード
-        maxSpeed : 3, //最大スピード
-        round : true, //形を丸くする
-        shadow : false //形に影をつける
+    <footer>
+      <p>Copyright©Sapporo Joho Mirai</p>
+    </footer>
+    <script type="text/javascript">
+      jQuery(document).snowfall({
+        flakeCount: 30, //量、数
+        flakeColor: "#FFF", //色
+        flakeIndex: 1, //重なり
+        minSize: 1, //最小サイズ
+        maxSize: 10, //最大サイズ
+        minSpeed: 1, //最低スピード
+        maxSpeed: 3, //最大スピード
+        round: true, //形を丸くする
+        shadow: false, //形に影をつける
         //collection : 'div' //要素に積もらせる
-        //image : 'xxx.png' //オリジナル画像 
-    });
+        //image : 'xxx.png' //オリジナル画像
+      });
     </script>
-</body>
-<script>jQuery(document).snowfall();</script>
-
+  </body>
+  <script>
+    jQuery(document).snowfall();
+  </script>
 </html>

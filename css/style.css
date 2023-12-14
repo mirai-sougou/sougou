@@ -1,43 +1,39 @@
 /* 文字折り返し設定 */
 body {
-    word-wrap: break-word;
-  }
-  /* ヘッダー */
-  header {
-    height: 250px;
-   
-   
-    background-color: #03243D;
-    background-repeat: repeat;
-  }
-  /* ヘッダーの文字の大きさ */
-  #title {
-    font-size: 40px;
-   
-  }
-  /* メイン */
-  h2 {
-    font-size: 23px;
-  }
-  .wrapper {
-    max-width: 950px;
-    /* 中央寄せにする */
-    margin: 0 auto;
-    padding-left: 18px;
-    padding-right: 18px;
-  }
-  main {
-    
-  padding: 10px;
-    background-color: #848484;
-   
-  }
-  p {
-    font-size: 18px;
-    padding: 10px;
-  }
+  word-wrap: break-word;
+}
+/* ヘッダー */
+header {
+  height: 250px;
 
-  /* 画像を2列に並べる
+  background-color: #03243d;
+  background-repeat: repeat;
+}
+/* ヘッダーの文字の大きさ */
+#title {
+  font-size: 40px;
+}
+/* メイン */
+h2 {
+  font-size: 23px;
+}
+.wrapper {
+  max-width: 950px;
+  /* 中央寄せにする */
+  margin: 0 auto;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+main {
+  padding: 10px;
+  background-color: #848484;
+}
+p {
+  font-size: 18px;
+  padding: 10px;
+}
+
+/* 画像を2列に並べる
   #box {
     display: grid;
     width: 500px;
@@ -54,16 +50,15 @@ body {
   }
   
  */
- .hr {
-    border-bottom: 1px solid #848484;
-  }
-  footer {
-    text-align: center;
-    color: #848484;
-    margin-bottom: 10px;
-    padding-top: 10px;
-  }
+.hr {
+  border-bottom: 1px solid #848484;
+}
+footer {
+  text-align: center;
+  color: #848484;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
 
-
-  @media (max-width: 600px) {
-  }
+@media (max-width: 600px) {
+}
