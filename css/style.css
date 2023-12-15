@@ -37,8 +37,8 @@ p {
 .purple {
   background-color: #9370db;
 }
-body{
-  background-color:#03243D ;
+body {
+  background-color: #03243d;
 }
 /* 画像を2列に並べる
   #box {
@@ -65,6 +65,16 @@ footer {
   color: #848484;
   margin-bottom: 10px;
   padding-top: 10px;
+}
+.button-bottom {
+  margin-right: 10px;
+  width: 150px;
+  height: 80px;
+}
+.button-shiryou {
+  border-radius: 40px;
+  width: 400px;
+  height: 70px;
 }
 
 @media (max-width: 600px) {
