@@ -8,7 +8,15 @@ header {
 
   background-color: #03243d;
   background-repeat: repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  padding: 10px; /* ヘッダーの余白 */
+  z-index: 1000; /* ヘッダーが他の要素の上に表示されるようにz-indexを設定 */
 }
+
 /* ヘッダーの文字の大きさ */
 #title {
   font-size: 40px;
@@ -76,6 +84,8 @@ footer {
   width: 400px;
   height: 70px;
 }
-
+/*この上にCSS書くこと*/
 @media (max-width: 600px) {
+ 
 }
+
