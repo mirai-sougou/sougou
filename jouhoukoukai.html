@@ -1,102 +1,81 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <script
-      type="text/javascript"
-      src="http://code.jquery.com/jquery-latest.min.js"
-    ></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ポートフォリオ</title>
-    <link href="css/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/ham.css" />
-    <meta
-      name="google-site-verification"
-      content="jZK94A-9ZnrZV0jVGYO72HrycaLX80ZacUyzQbxPLEI"
-    />
-    <script type="text/javascript" src="js/snowfall.min.jquery.js"></script>
-    <script>
-      $(function () {
-        $("#includedHeader").load("header.html");
-        $("#includedMovie").load("movie.html");
-      });
-    </script>
-  </head>
 
-  <body>
-    <div id="includedHeader"></div>
-    <div id="includedMovie"></div>
-    <div class="wrapper">
-      <main>
-        
-       <a class="text-white"  href="https://sapporo-mirai.ac.jp/mirai2023/wp-content/uploads/2023/06/R5_disclosure_officersList.pdf">役員名簿(PDF/43KB)</a>
-
-
-        <div class="container mt-5" style="width: 70%">
-          <table class="table table-bordered">
-            <tbody>
-            <p>【財団状況】</p>
-           <a class="text-white" href="https://sapporo-mirai.ac.jp/mirai2023/wp-content/uploads/2021/06/disclosure_03.pdf">成績評価方法(PDF/225KB)</a>
-          <br></br>
-            <a class="text-white" href="https://sapporo-mirai.ac.jp/mirai2023/wp-content/uploads/2021/06/disclosure_04.pdf">卒業認定基準(PDF/62KB)</a>
-          <br></br>
-          
-            <p>【財団状況】</p>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <button type="button" class="btn btn-secondary mt-3 mb-3 button-shiryou">
-          資料請求はこちら ＞
-        </button>
-
-        <div class="mb-3">
-          <button type="button" class="btn btn-secondary button-bottom">
-            指定校推薦<br />奨学生出願
-          </button>
-          <button type="button" class="btn btn-secondary button-bottom">
-            推薦出願
-          </button>
-          <button type="button" class="btn btn-secondary button-bottom">
-            特待生出願
-          </button>
-        </div>
-        <div>
-          <button type="button" class="btn btn-secondary button-bottom">
-            AO出願
-          </button>
-          <button type="button" class="btn btn-secondary button-bottom">
-            一般出願
-          </button>
-          <button type="button" class="btn btn-secondary button-bottom">
-            札幌情報未来専門学校奨学生制度
-          </button>
-        </div>
-      </main>
-    </div>
-    <div class="hr"></div>
-
-    <footer>
-      <p>Copyright©Sapporo Joho Mirai</p>
-    </footer>
-    <script type="text/javascript">
-      jQuery(document).snowfall({
-        flakeCount: 30, //量、数
-        flakeColor: "#FFF", //色
-        flakeIndex: 1, //重なり
-        minSize: 1, //最小サイズ
-        maxSize: 10, //最大サイズ
-        minSpeed: 1, //最低スピード
-        maxSpeed: 3, //最大スピード
-        round: true, //形を丸くする
-        shadow: false, //形に影をつける
-        //collection : 'div' //要素に積もらせる
-        //image : 'xxx.png' //オリジナル画像
-      });
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>総合制作</title>
+  <link href="css/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/ham.css" />
+  <meta name="google-site-verification" content="jZK94A-9ZnrZV0jVGYO72HrycaLX80ZacUyzQbxPLEI" />
+  <script type="text/javascript" src="js/snowfall.min.jquery.js"></script>
   <script>
-    jQuery(document).snowfall();
+    $(function () {
+      $("#includedHeader").load("header.html");
+      $("#includedMovie").load("movie.html");
+      $("#IncludedButton-6").load("button-6.html");
+      $("#IncludedButton-shiryou").load("button-shiryou.html");
+    });
   </script>
+</head>
+
+<body>
+  <div id="includedHeader"></div>
+  <div id="includedMovie"></div>
+  <div class="wrapper">
+    <main>
+
+      <a class="text-white"
+        href="https://sapporo-mirai.ac.jp/mirai2023/wp-content/uploads/2023/06/R5_disclosure_officersList.pdf">役員名簿(PDF/43KB)</a>
+
+
+      <div class="container mt-5  table-responsive">
+        <table class="table table-bordered">
+          <tbody>
+            <p>【財団状況】</p>
+            <a class="text-white"
+              href="https://sapporo-mirai.ac.jp/mirai2023/wp-content/uploads/2021/06/disclosure_03.pdf">成績評価方法(PDF/225KB)</a>
+            <br></br>
+            <a class="text-white"
+              href="https://sapporo-mirai.ac.jp/mirai2023/wp-content/uploads/2021/06/disclosure_04.pdf">卒業認定基準(PDF/62KB)</a>
+            <br></br>
+
+            <p>【財団状況】</p>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- この二つのdivは残してください -->
+      <div id="IncludedButton-shiryou"></div>
+      <div id="IncludedButton-6"></div>
+
+    </main>
+  </div>
+  <div class="hr"></div>
+
+  <footer>
+    <p>Copyright©Sapporo Joho Mirai</p>
+  </footer>
+  <script type="text/javascript">
+    jQuery(document).snowfall({
+      flakeCount: 30, //量、数
+      flakeColor: "#FFF", //色
+      flakeIndex: 1, //重なり
+      minSize: 1, //最小サイズ
+      maxSize: 10, //最大サイズ
+      minSpeed: 1, //最低スピード
+      maxSpeed: 3, //最大スピード
+      round: true, //形を丸くする
+      shadow: false, //形に影をつける
+      //collection : 'div' //要素に積もらせる
+      //image : 'xxx.png' //オリジナル画像
+    });
+  </script>
+</body>
+<script>
+  jQuery(document).snowfall();
+</script>
+
 </html>

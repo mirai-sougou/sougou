@@ -2,28 +2,53 @@
 body {
   word-wrap: break-word;
 }
+
 /* ヘッダー */
 header {
   height: 250px;
-/* 
-  background-color: #03243d;
-  background-repeat: repeat;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%; */
 
-  /* z-index: 1000; ヘッダーが他の要素の上に表示されるようにz-indexを設定 */
 }
 
-/* ヘッダーの文字の大きさ */
-#title {
-  font-size: 40px;
+/* 動画をここに置く */
+.movie {
+  height: 300px;
 }
-/* メイン */
+
+.icon {
+  width: 150px;
+}
+
+/* テーブル内の文字を上下中央寄せ */
+table td {
+  vertical-align: middle;
+}
+
+.button-top {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.button-top-2 {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-left: 1px solid white;
+
+}
+
 h2 {
   font-size: 23px;
 }
+
 .wrapper {
   max-width: 1200px;
   /* 中央寄せにする */
@@ -31,22 +56,27 @@ h2 {
   padding-left: 18px;
   padding-right: 18px;
 }
+
 main {
   padding: 10px;
   background-color: #000055;
   text-align: center;
   color: white;
 }
+
 p {
   font-size: 18px;
   padding: 10px;
 }
+
 .purple {
   background-color: #9370db;
 }
+
 body {
   background-color: #03243d;
 }
+
 /* 画像を2列に並べる
   #box {
     display: grid;
@@ -67,24 +97,80 @@ body {
 .hr {
   border-bottom: 1px solid #848484;
 }
+
 footer {
   text-align: center;
   color: #848484;
   margin-bottom: 10px;
   padding-top: 10px;
 }
+
 .button-bottom {
   margin-right: 10px;
   width: 150px;
   height: 80px;
 }
+
 .button-shiryou {
   border-radius: 40px;
   width: 400px;
   height: 70px;
 }
+
 /*この上にCSS書くこと*/
 @media (max-width: 600px) {
- 
-}
+  .button-bottom {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
 
+  /* ボタンを縦並びにする */
+  .tate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tate-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ボタンの大きさやmargin,paddingを元に戻す */
+  .button-shiryou {
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+  }
+
+  .button-top {
+    background-color: green;
+    color: white;
+    font-size: auto;
+    padding: 0;
+    border: none;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+
+  }
+
+  .button-top-2 {
+    background-color: green;
+    color: white;
+    border: none;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    border-left: 1px solid white;
+  }
+
+  .icon {
+    width: 130px;
+  }
+
+  header {
+    height: 210px;
+  }
+}
