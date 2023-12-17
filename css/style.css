@@ -21,6 +21,7 @@ header {
 /* テーブル内の文字を上下中央寄せ */
 table td {
   vertical-align: middle;
+  font-size: 20px;
 }
 
 .button-top {
@@ -65,8 +66,9 @@ main {
 }
 
 p {
-  font-size: 18px;
-  padding: 10px;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 70px;
 }
 
 .purple {
@@ -117,7 +119,8 @@ footer {
   height: 70px;
 }
 
-/*この上にCSS書くこと*/
+/* メニュー */
+
 @media (max-width: 600px) {
   .button-bottom {
     margin-right: 0;
@@ -172,6 +175,14 @@ footer {
   }
 
   header {
-    height: 210px;
+    height: 230px;
   }
+
+  p {
+    font-size: 20px;
+    text-align: left;
+    padding-left: 0;
+  }
+
+  /* メニュー */
 }
