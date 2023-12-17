@@ -1,0 +1,55 @@
+--
+-- テーブルの構造 `contact`
+--
+
+CREATE TABLE `contact` (
+  `id` int(11) NOT NULL,
+  `fullname` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `message` varchar(100) NOT NULL,
+  `tel` int(20) NOT NULL,
+  `grade` varchar(20) NOT NULL,
+  `gakkou` varchar(100) NOT NULL,
+  `kana` varchar(100) NOT NULL,
+  `gender` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- テーブルのインデックス `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- テーブルの AUTO_INCREMENT `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
