@@ -5,17 +5,58 @@
         </div>
         <div class="d-flex ml-2 p-2">
             <button type="button" class="btn btn-light me-2">ボタン1</button>
-            <button type="button" class="btn btn-light">ボタン2</button>
+            <a href="contactform.php"> <button type="button" class="btn btn-light">お問い合わせ</button></a>
         </div>
     </div>
     <div class="d-flex align-items-center justify-content-between">
         <div class="d-flex align-items-center"></div>
-        <div class="d-flex p-2">
-            <button type="button" class="button-top">本校について</button>
-            <button type="button" class="button-top-2">イベント情報</button>
-            <button type="button" class="button-top-2">学科紹介</button>
-            <button type="button" class="button-top-2">学費</button>
-            <button type="button" class="button-top-2">資格と就職</button>
+        <div class="d-flex p-2 inner">
+            <ul class="menu">
+
+                <!-- メニュー1 -->
+                <li class="menu__name">本校について
+                    <ul class="drop-menu">
+                        <li class="drop-menu__name"><a href="">menu-1_1</a></li>
+                        <li class="drop-menu__name"><a href="">menu-1_2</a></li>
+                        <li class="drop-menu__name"><a href="">menu-1_3</a></li>
+                    </ul>
+                </li>
+
+                <!-- メニュー2 -->
+                <li class="menu__name">イベント情報
+                    <ul class="drop-menu">
+                        <li class="drop-menu__name"><a href="">menu</a></li>
+                    </ul>
+                </li>
+                <li class="menu__name">学科紹介
+                    <ul class="drop-menu">
+                        <li class="drop-menu__name"><a href="">menu</a></li>
+                    </ul>
+                </li>
+                <li class="menu__name">学費
+                    <ul class="drop-menu">
+                        <li class="drop-menu__name"><a href="teiinngakuhi.html">定員学費</a></li>
+                    </ul>
+                </li>
+                <li class="menu__name">資格と就職
+                    <ul class="drop-menu">
+                        <li class="drop-menu__name"><a href="">a</a></li>
+                    </ul>
+                </li>
+            </ul>
+
         </div>
     </div>
+
 </header>
+<script>// メニュー
+    $(function () {
+        $("ul.menu li").hover(
+            function () {
+                $(".drop-menu:not(:animated)", this).slideDown();
+            },
+            function () {
+                $(".drop-menu", this).slideUp();
+            }
+        );
+    });</script>

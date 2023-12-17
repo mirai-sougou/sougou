@@ -15,14 +15,3 @@ $(function () {
     $("#IncludedButton-6").load("button-6.html");
     $("#IncludedButton-shiryou").load("button-shiryou.html");
 });
-function showMenu() {
-    var submenu = document.getElementById("submenu");
-    submenu.style.display = "block";
-}
-
-function hideMenu() {
-    var submenu = document.getElementById("submenu");
-    submenu.style.display = "none";
-}
-
-// メニュー

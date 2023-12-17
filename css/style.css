@@ -24,28 +24,6 @@ table td {
   font-size: 20px;
 }
 
-.button-top {
-  background-color: green;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.button-top-2 {
-  background-color: green;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  border-left: 1px solid white;
-
-}
-
 h2 {
   font-size: 23px;
 }
@@ -120,6 +98,67 @@ footer {
 }
 
 /* メニュー */
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.inner {
+  width: 40%;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+}
+
+.menu__name {
+  position: relative;
+  width: 50%;
+  padding: 15px 0;
+  background-color: green;
+  border: solid 1px #fff;
+  text-align: center;
+  color: #fff;
+}
+
+.drop-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+.drop-menu__name {
+  width: 100%;
+}
+
+.drop-menu__name a {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  background-color: green;
+  border: solid 1px #fff;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.drop-menu__name a:hover {
+  opacity: 0.5;
+}
+
+.drop-menu__img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.drop-menu__img img {
+  width: 100%;
+}
 
 @media (max-width: 600px) {
   .button-bottom {
@@ -148,27 +187,6 @@ footer {
     padding: 5px;
   }
 
-  .button-top {
-    background-color: green;
-    color: white;
-    font-size: auto;
-    padding: 0;
-    border: none;
-    margin: 0;
-    text-align: center;
-    text-decoration: none;
-
-  }
-
-  .button-top-2 {
-    background-color: green;
-    color: white;
-    border: none;
-    margin: 0;
-    text-align: center;
-    text-decoration: none;
-    border-left: 1px solid white;
-  }
 
   .icon {
     width: 130px;
@@ -185,4 +203,8 @@ footer {
   }
 
   /* メニュー */
+  .inner {
+    width: 100%;
+  }
+
 }
