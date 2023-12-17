@@ -117,92 +117,109 @@ try {
     $pdo = null; // Close the database connection
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
-    <meta charset="utf-8">
-    <title>お問い合わせフォーム</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <style>
-        body {
-            padding: 10px;
-            max-width: 600px;
-            margin: 0px auto;
-        }
-
-        div.button {
-            text-align: center;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>総合制作</title>
+    <link href="css/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/ham.css" />
+    <meta name="google-site-verification" content="jZK94A-9ZnrZV0jVGYO72HrycaLX80ZacUyzQbxPLEI" />
+    <script type="text/javascript" src="js/snowfall.min.jquery.js"></script>
 </head>
 
 <body>
-    <?php if ($mode == 'input') { ?>
-        <!-- 入力画面 -->
-        <?php
-        if ($errmessage) {
-            echo '<div class="alert alert-danger" role="alert">';
-            echo implode('<br>', $errmessage);
-            echo '</div>';
-        }
-        ?>
-        <form action="./contactform.php" method="post">
-            名前 <input type="text" name="fullname" value="<?php echo $_SESSION['fullname'] ?>" class="form-control"><br>
-            フリガナ <input type="text" name="kana" value="<?php echo $_SESSION['kana'] ?>" class="form-control"><br>
-            <label>
-                <input type="radio" name="gender" value="male" <?php if (isset($_SESSION['gender']) && $_SESSION['gender'] == 'male')
-                    echo 'checked'; ?>>
-                男性
-            </label>
+    <div id="includedHeader"></div>
+    <div id="includedMovie"></div>
+    <div class="wrapper">
+        <main>
 
-            <label>
-                <input type="radio" name="gender" value="female" <?php if (isset($_SESSION['gender']) && $_SESSION['gender'] == 'female')
-                    echo 'checked'; ?>>
-                女性
-            </label>
-            <br>
-            Eメール <input type="email" name="email" value="<?php echo $_SESSION['email'] ?>" class="form-control"><br>
-            電話番号 <input type="tel" name="tel" value="<?php echo $_SESSION['tel'] ?>" class="form-control"><br>
-            現在の学年など選択してください <select class="form-control" id="gradeSelect" name="grade">
-                <option value="1" <?php if (isset($_SESSION['grade']) && $_SESSION['grade'] == '1')
-                    echo 'selected'; ?>>1年生
-                </option>
-                <option value="2" <?php if (isset($_SESSION['grade']) && $_SESSION['grade'] == '2')
-                    echo 'selected'; ?>>2年生
-                </option>
-                <option value="3" <?php if (isset($_SESSION['grade']) && $_SESSION['grade'] == '3')
-                    echo 'selected'; ?>>3年生
-                </option>
-            </select><br>
-            学校名<input type="text" name="gakkou" placeholder="abc高校" value="<?php echo $_SESSION['gakkou'] ?>"
-                class="form-control"><br>
-            お問い合わせ内容<br>
-            <textarea cols="40" rows="8" name="message"
-                class="form-control"><?php echo $_SESSION['message'] ?></textarea><br>
-            <div class="button">
-                <input type="submit" name="confirm" value="確認" class="btn btn-primary btn-lg" />
-            </div>
-        </form>
-    <?php } else if ($mode == 'confirm') { ?>
-            <!-- 確認画面 -->
-            <form action="./contactform.php" method="post">
-                <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>">
-                名前
-            <?php echo $_SESSION['fullname'] ?><br>
-                Eメール
-            <?php echo $_SESSION['email'] ?><br>
-                お問い合わせ内容<br>
-            <?php echo nl2br($_SESSION['message']) ?><br>
-            <?php echo $_SESSION['kana'] ?><br>
-                <input type="submit" name="back" value="戻る" class="btn btn-primary btn-lg" />
-                <input type="submit" name="send" value="送信" class="btn btn-primary btn-lg" />
-            </form>
-    <?php } else { ?>
-            <!-- 完了画面 -->
-            送信しました。お問い合わせありがとうございました。<br>
-    <?php } ?>
+
+            <?php if ($mode == 'input') { ?>
+                <!-- 入力画面 -->
+                <?php
+                if ($errmessage) {
+                    echo '<div class="alert alert-danger" role="alert">';
+                    echo implode('<br>', $errmessage);
+                    echo '</div>';
+                }
+                ?>
+                <form action="./contactform.php" method="post">
+                    <div class="d-flex">
+                        <div style="width: 30%;">名前</div> <input type="text" name="fullname"
+                            value="<?php echo $_SESSION['fullname'] ?>" class="form-control">
+                    </div><br>
+                    フリガナ <input type="text" name="kana" value="<?php echo $_SESSION['kana'] ?>" class="form-control"><br>
+                    <label>
+                        <input type="radio" name="gender" value="male" <?php if (isset($_SESSION['gender']) && $_SESSION['gender'] == 'male')
+                            echo 'checked'; ?>>
+                        男性
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="female" <?php if (isset($_SESSION['gender']) && $_SESSION['gender'] == 'female')
+                            echo 'checked'; ?>>
+                        女性
+                    </label>
+                    <br>
+                    Eメール <input type="email" name="email" value="<?php echo $_SESSION['email'] ?>" class="form-control"><br>
+                    電話番号 <input type="tel" name="tel" value="<?php echo $_SESSION['tel'] ?>" class="form-control"><br>
+                    現在の学年など選択してください <select class="form-control" id="gradeSelect" name="grade">
+                        <option value="1" <?php if (isset($_SESSION['grade']) && $_SESSION['grade'] == '1')
+                            echo 'selected'; ?>>1年生
+                        </option>
+                        <option value="2" <?php if (isset($_SESSION['grade']) && $_SESSION['grade'] == '2')
+                            echo 'selected'; ?>>2年生
+                        </option>
+                        <option value="3" <?php if (isset($_SESSION['grade']) && $_SESSION['grade'] == '3')
+                            echo 'selected'; ?>>3年生
+                        </option>
+                    </select><br>
+                    学校名<input type="text" name="gakkou" placeholder="abc高校" value="<?php echo $_SESSION['gakkou'] ?>"
+                        class="form-control"><br>
+                    お問い合わせ内容<br>
+                    <textarea cols="40" rows="8" name="message"
+                        class="form-control"><?php echo $_SESSION['message'] ?></textarea><br>
+                    <div class="button">
+                        <input type="submit" name="confirm" value="確認" class="btn btn-primary btn-lg" />
+                    </div>
+                </form>
+            <?php } else if ($mode == 'confirm') { ?>
+                    <!-- 確認画面 -->
+                    <form action="./contactform.php" method="post">
+                        <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>">
+                        名前
+                    <?php echo $_SESSION['fullname'] ?><br>
+                        Eメール
+                    <?php echo $_SESSION['email'] ?><br>
+                        お問い合わせ内容<br>
+                    <?php echo nl2br($_SESSION['message']) ?><br>
+                    <?php echo $_SESSION['kana'] ?><br>
+                        <input type="submit" name="back" value="戻る" class="btn btn-primary btn-lg" />
+                        <input type="submit" name="send" value="送信" class="btn btn-primary btn-lg" />
+                    </form>
+            <?php } else { ?>
+                    <!-- 完了画面 -->
+                    送信しました。お問い合わせありがとうございました。<br>
+            <?php } ?>
+
+
+
+
+        </main>
+    </div>
+    <div class="hr"></div>
+
+    <footer>
+        <p>Copyright©Sapporo Joho Mirai</p>
+    </footer>
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
