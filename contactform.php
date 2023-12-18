@@ -90,7 +90,7 @@ try {
             $mode = 'input';
         } else {
             // Insert data into the database
-            $stmt = $pdo->prepare("INSERT INTO boku (fullname, email, message,tel,grade,gakkou,kana,gender) VALUES (?, ?, ?,?,?,?,?,?)");
+            $stmt = $pdo->prepare("INSERT INTO contact (fullname, email, message,tel,grade,gakkou,kana,gender) VALUES (?, ?, ?,?,?,?,?,?)");
             $stmt->execute(array($_SESSION['fullname'], $_SESSION['email'], $_SESSION['message'], $_SESSION['tel'],
                 $_SESSION['grade'], $_SESSION['gakkou'], $_SESSION['kana'], $_SESSION['gender']));
 
