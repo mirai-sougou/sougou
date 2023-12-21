@@ -5,9 +5,9 @@ $errmessage = array();
 
 try {
     // Define your database credentials
-    $db_host = 'localhost';
+    $db_host = 'localhost.localdomain';
     $db_user = 'root';
-    $db_password = '';
+    $db_password = 'ynF8cwmT-';
     $db_name = 'php';
 
 
