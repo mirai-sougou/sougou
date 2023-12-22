@@ -160,6 +160,17 @@ a {
   width: 100%;
 }
 
+
+p {
+  font-size: 20px;
+  text-align:center
+  
+}
+
+
+
+
+
 @media (max-width: 600px) {
   .button-bottom {
     margin-right: 0;
