@@ -47,6 +47,7 @@ p {
   font-size: 20px;
   text-align: left;
   padding-left: 70px;
+  padding-right: 70px;
 }
 
 .purple {
@@ -211,6 +212,7 @@ p {
     font-size: 20px;
     text-align: left;
     padding-left: 0;
+    padding-right: 0;
   }
 
   /* メニュー */
