@@ -47,6 +47,7 @@ p {
   font-size: 20px;
   text-align: left;
   padding-left: 70px;
+  padding-right: 70px;
 }
 
 .purple {
@@ -160,6 +161,17 @@ a {
   width: 100%;
 }
 
+
+p {
+  font-size: 20px;
+  text-align:center
+  
+}
+
+
+
+
+
 @media (max-width: 600px) {
   .button-bottom {
     margin-right: 0;
@@ -200,6 +212,7 @@ a {
     font-size: 20px;
     text-align: left;
     padding-left: 0;
+    padding-right: 0;
   }
 
   /* メニュー */
