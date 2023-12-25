@@ -5,12 +5,36 @@
   <meta charset="UTF-8" />
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>総合制作</title>
+  <title>学生会館・アパート紹介</title>
   <link href="css/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/ham.css" />
   <meta name="google-site-verification" content="jZK94A-9ZnrZV0jVGYO72HrycaLX80ZacUyzQbxPLEI" />
   <script type="text/javascript" src="js/snowfall.min.jquery.js"></script>
+  <style>
+    table {
+      width: 80%;
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    /* 3列目と4列目の間に右側のパディングを追加 */
+    td:nth-child(3) {
+      padding-right: 20px; /* 適切な値を設定 */
+      border-right: none; /* 3列目の右側の縦線を消す */
+    }
+
+    /* 最後の列（4列目）の縦線を消す */
+    td:last-child {
+      border-right: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -25,6 +49,49 @@
         <p>詳しくは本校までお問い合わせください。</p>
 
         <img src="images/map_region_2023.png.webp" width="80%"/>
+
+        <table>
+          <tr>
+            <td><h2>①</h2></td>
+            <td><h2>ドーミー琴似</h2></td>
+            <td>札幌市西区琴似1 条5 丁目3-8
+              <br>地下鉄9 分＋徒歩16 分</td>
+            <td><h2>⑤</h2></td>
+            <td><h2>北海道女子 学生会館</h2></td>
+            <td>札幌市中央区北21条西15 丁目1-16
+              <br>バス10 分＋徒歩1 分</td>
+          </tr>
+          <tr>
+            <td><h2>②</h2></td>
+            <td><h2>ドーミー円山</h2></td>
+            <td>札幌市中央区南2 条西22 丁目1-33
+              <br>徒歩：25 分</td>
+            <td><h2>⑥</h2></td>
+            <td><h2>クラーク女子 学生会館</h2></td>
+            <td>札幌市北区北8 条西6 丁目2-27
+              <br>徒歩：15 分</td>
+          </tr>
+          <tr>
+            <td><h2>③</h2></td>
+            <td><h2>学生会館 鹿友ディアハイム</h2></td>
+            <td>札幌市中央区大通西16 丁目2
+              <br>徒歩：10 分</td>
+            <td><h2>⑦</h2></td>
+            <td><h2>札幌共和 女子学生会館</h2></td>
+            <td>札幌市東区北9 条東1丁目1-8
+              <br>徒歩：26 分</td>
+          </tr>
+          <tr>
+            <td><h2>④</h2></td>
+            <td><h2>学生会館 エタージュ29</h2></td>
+            <td>札幌市北区北29 条西15 丁目
+              <br>無料バス：10 分</td>
+            <td><h2>⑧</h2></td>
+            <td><h2>フォーリーフ 女子学生会館</h2></td>
+            <td>札幌市中央区北4 条東2 丁目1番地
+              <br>徒歩：23 分</td>
+          </tr>
+        </table>
         
       <!-- この二つのdivは残してください -->
       <div id="IncludedButton-shiryou"></div>
