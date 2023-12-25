@@ -13,26 +13,17 @@
   <script type="text/javascript" src="js/snowfall.min.jquery.js"></script>
   <style>
     table {
-      width: 80%;
-      margin: 0 auto;
       border-collapse: collapse;
+      width: 80%; /* 表の幅を指定 */
+      margin: auto; /* 左右のマージンをautoにして中央に表示 */
     }
 
     th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
+      border: 0;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      padding: 3px;
       text-align: left;
-    }
-
-    /* 3列目と4列目の間に右側のパディングを追加 */
-    td:nth-child(3) {
-      padding-right: 20px; /* 適切な値を設定 */
-      border-right: none; /* 3列目の右側の縦線を消す */
-    }
-
-    /* 最後の列（4列目）の縦線を消す */
-    td:last-child {
-      border-right: none;
     }
   </style>
 </head>
@@ -48,7 +39,7 @@
         <p>地方からの通学が難しい方のために、住居の紹介を行っています。</p>
         <p>詳しくは本校までお問い合わせください。</p>
 
-        <img src="images/map_region_2023.png.webp" width="80%"/>
+        <img src="images/map_region_2023-1536x552.png.webp" width="80%"/>
 
         <table>
           <tr>
@@ -92,6 +83,27 @@
               <br>徒歩：23 分</td>
           </tr>
         </table>
+
+        <h5>アパート・マンション</h5>
+        <ul>
+          <li>室内：流し台・浴室・トイレなど</li>
+          <li>室料：３万～５万５千円（６～１０畳）／月</li>
+        </ul>
+
+        <h5>学生会館</h5>
+        <ul>
+          <li>室内：室内：机・イス・ベッド・ロッカー・冷蔵庫・暖房器具など</li>
+          <li>共用：浴室・シャワー室・トイレ・給湯室・電子レンジ・洗濯機など</li>
+          <li>入館料：３万～９万円</li>
+          <li>室料：４万～７万５千円／月</li>
+        </ul>
+
+        <h5>下宿</h5>
+        <ul>
+          <li>室内：机・椅子・ベットなど</li>
+          <li>共用：食堂・浴室・洗濯機・流し台・トイレ</li>
+          <li>室料：４万～５万５千円（４.５～８畳）／月</li>
+        </ul>
         
       <!-- この二つのdivは残してください -->
       <div id="IncludedButton-shiryou"></div>
