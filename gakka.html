@@ -7,8 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>総合制作</title>
   <link href="css/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link id="stylesheet" rel="stylesheet" href="css/style.css" />
   <script type="text/javascript" src="js/snowfall.min.jquery.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get the current date
+      var currentDate = new Date();
+
+      // 4月～5月かどうかをチェックする
+      if (currentDate.getMonth() >= 3 && currentDate.getMonth() < 5) {
+        //4月以降だったならcssを変更する
+        document.getElementById('stylesheet').href = 'css/spring.css';
+      }
+    });
+  </script>
 </head>
 
 <body>

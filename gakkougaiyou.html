@@ -7,12 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ポートフォリオ</title>
   <link href="css/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link id="stylesheet" rel="stylesheet" href="css/style.css" />
   <script type="text/javascript" src="js/snowfall.min.jquery.js"></script>
   <script>
-    $(function () {
-      $("#includedHeader").load("header.html");
-      $("#includedMovie").load("movie.html");
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get the current date
+      var currentDate = new Date();
+
+      // 4月～5月かどうかをチェックする
+      if (currentDate.getMonth() >= 3 && currentDate.getMonth() < 5) {
+        //4月以降だったならcssを変更する
+        document.getElementById('stylesheet').href = 'css/spring.css';
+      }
     });
   </script>
 </head>
@@ -205,24 +211,7 @@
   <footer>
     <p>Copyright©Sapporo Joho Mirai</p>
   </footer>
-  <!-- <script type="text/javascript">
-      jQuery(document).snowfall({
-        flakeCount: 30, //量、数
-        flakeColor: "#FFF", //色
-        flakeIndex: 1, //重なり
-        minSize: 1, //最小サイズ
-        maxSize: 10, //最大サイズ
-        minSpeed: 1, //最低スピード
-        maxSpeed: 3, //最大スピード
-        round: true, //形を丸くする
-        shadow: false, //形に影をつける
-        //collection : 'div' //要素に積もらせる
-        //image : 'xxx.png' //オリジナル画像
-      });
-    </script> -->
+  <script src="js/script.js"></script>
 </body>
-<!-- <script>
-    jQuery(document).snowfall();
-  </script> -->
 
 </html>

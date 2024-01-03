@@ -5,13 +5,20 @@ body {
 
 /* ヘッダー */
 header {
-  height: 250px;
-
+  height: 270px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: #03243d;
+  /* ヘッダーが他の要素の上に表示されるようにする */
 }
 
 /* 動画をここに置く */
 .movie {
-  height: 300px;
+  height: 250px;
+  margin-top: 270px;
+  /* ヘッダーの高さ分だけコンテンツを下にずらす */
 }
 
 .icon {
