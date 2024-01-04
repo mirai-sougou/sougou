@@ -2,7 +2,7 @@
     <div class="d-flex align-items-center justify-content-between">
         <div class="d-flex align-items-center">
             <a href="index.html">
-                <img src="images/Christmasロゴ5 1.png" alt="" class="me-2 p-4 icon" />
+                <img src="images/Christmasロゴ5 1.png" alt="" class="me-2 p-4 icon" id="taragetImage" />
             </a>
         </div>
         <div class="d-flex ml-2 p-2">
@@ -73,8 +73,23 @@
     </div>
 
 </header>
+
 <script>// メニュー
+    // 新しい画像のパス
+    const newImagePath = "images/春.png";
+    // 現在の日付を取得
+    var currentDate = new Date();
+    // 月を取得 (0-indexedなので4月は3, 5月は4)
+    var currentMonth = currentDate.getMonth();
+    const target = document.querySelector('#targetImage');
+
+    // 4月から5月の期間の場合のみ画像を変更
+    if (currentMonth > 0 && currentMonth <= 4) {
+        // 画像の要素を取得して新しい画像のパスに変更
+        target.src = newImagePath;
+    }
     $(function () {
+
         $("ul.menu li").hover(
             function () {
                 $(".drop-menu:not(:animated)", this).slideDown();
@@ -83,4 +98,6 @@
                 $(".drop-menu", this).slideUp();
             }
         );
-    });</script>
+    });
+
+</script>
