@@ -1,14 +1,40 @@
-jQuery(document).snowfall({
-	flakeCount: 30, //量、数
-	flakeColor: '#FFF', //色
-	flakeIndex: 1, //重なり
-	minSize: 1, //最小サイズ
-	maxSize: 3, //最大サイズ
-	minSpeed: 1, //最低スピード
-	maxSpeed: 1, //最大スピード
-	round: true, //形を丸くする
-	shadow: false //形に影をつける
+// jQuery(document).snowfall({
+// 	flakeCount: 30, //量、数
+// 	flakeColor: '#FFF', //色
+// 	flakeIndex: 1, //重なり
+// 	minSize: 1, //最小サイズ
+// 	maxSize: 3, //最大サイズ
+// 	minSpeed: 1, //最低スピード
+// 	maxSpeed: 1, //最大スピード
+// 	round: true, //形を丸くする
+// 	shadow: false //形に影をつける
+// });
+
+jQuery(document).ready(function ($) {
+	var currentDate = new Date();
+	var snowfallOptions = {
+		flakeCount: 30,
+		flakeColor: '#FFF',
+		flakeIndex: 1,
+		minSize: 2,
+		maxSize: 4,
+		minSpeed: 1,
+		maxSpeed: 2,
+		round: true,
+		shadow: false
+	};
+
+	if (currentDate.getMonth() >= 3 && currentDate.getMonth() < 5) {
+		// 4月から5月までの期間の場合
+		snowfallOptions.flakeCount = 50;
+		snowfallOptions.maxSize = 13;
+		snowfallOptions.image = '../images/sakura.png';
+	}
+
+	// スノーフレークを開始
+	jQuery(document).snowfall(snowfallOptions);
 });
+
 $(function () {
 	$("#includedHeader").load("header.html");
 	$("#includedMovie").load("movie.html");
