@@ -595,6 +595,18 @@ try {
         <p>Copyright©Sapporo Joho Mirai</p>
     </footer>
     <script src="js/script.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker({
+                dateFormat: "yy-mm-dd", // 期待される日付のフォーマット
+                changeMonth: true, // 月の選択を有効にする
+                changeYear: true, // 年の選択を有効にする
+                yearRange: "1900:2024" // 選択可能な年の範囲
+            });
+        });
+
+
+    </script>
 
 </body>
 

@@ -41,15 +41,6 @@ $(function () {
 	$("#IncludedButton-6").load("button-6.html");
 	$("#IncludedButton-shiryou").load("button-shiryou.html");
 });
-$(function () {
-	$("#datepicker").datepicker({
-		dateFormat: "yy-mm-dd", // 期待される日付のフォーマット
-		changeMonth: true, // 月の選択を有効にする
-		changeYear: true, // 年の選択を有効にする
-		yearRange: "1900:2024" // 選択可能な年の範囲
-	});
-});
-
 
 $(document).ready(function () {
 	// 郵便番号入力時に住所を取得して自動入力
