@@ -186,12 +186,9 @@ try {
     <script type="text/javascript" src="js/snowfall.min.jquery.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="css/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/ham.css" />
-    <meta name="google-site-verification" content="jZK94A-9ZnrZV0jVGYO72HrycaLX80ZacUyzQbxPLEI" />
-
+    <link id="stylesheet" rel="stylesheet" href="css/style.css" />
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
+    <script src="js/spring.js"></script>
 </head>
 
 <body>
