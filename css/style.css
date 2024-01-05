@@ -171,6 +171,9 @@ a {
 
 
 
+footer p {
+  text-align: center;
+}
 
 
 
@@ -179,6 +182,12 @@ a {
     margin-right: 0;
     margin-bottom: 2rem;
   }
+
+  .button-r {
+    font-size: 12px;
+  }
+
+
 
   /* ボタンを縦並びにする */
   .tate {
@@ -207,7 +216,7 @@ a {
   }
 
   header {
-    height: 230px;
+    height: 180px;
   }
 
   p {
@@ -220,6 +229,10 @@ a {
   /* メニュー */
   .inner {
     width: 100%;
+  }
+
+  footer {
+    color: white;
   }
 
 }

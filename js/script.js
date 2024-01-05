@@ -17,16 +17,15 @@ jQuery(document).ready(function ($) {
 		flakeColor: '#FFF',
 		flakeIndex: 1,
 		minSize: 2,
-		maxSize: 4,
+		maxSize: 3,
 		minSpeed: 1,
 		maxSpeed: 2,
 		round: true,
 		shadow: false
 	};
 
-	if (currentDate.getMonth() >= 3 && currentDate.getMonth() < 5) {
+	if (currentDate.getMonth() >= 3 && currentDate.getMonth() <= 4) {
 		// 4月から5月までの期間の場合
-		snowfallOptions.flakeCount = 50;
 		snowfallOptions.maxSize = 13;
 		snowfallOptions.image = '../images/sakura.png';
 	}

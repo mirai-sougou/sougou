@@ -7,13 +7,18 @@
         </div>
         <div class="d-flex ml-2 p-2">
             <a href="sakuhinn.html">
-                <button type="button" class="btn btn-light me-2">学生作品</button>
+                <button type="button" class="btn btn-light me-2 button-r">学生作品</button>
             </a>
-            <a href="contactform.php"> <button type="button" class="btn btn-light">お問い合わせ</button></a>
+            <a href="document.php">
+                <button type="button" class="btn btn-light me-2 button-r">資料請求</button>
+            </a>
+            <a href="contactform.php"> <button type="button" class="btn btn-light button-r">お問い合わせ</button></a>
         </div>
+
     </div>
     <div class="d-flex align-items-center justify-content-between">
         <div class="d-flex align-items-center"></div>
+
         <div class="d-flex p-2 inner">
             <ul class="menu">
 
@@ -74,7 +79,7 @@
 
 </header>
 
-<script>// メニュー
+<script>
     // 新しい画像のパス
     const newImagePath = "images/haru.png";
     // 現在の日付を取得
@@ -84,7 +89,7 @@
     const target = document.querySelector('#targetImage');
 
     // 4月から5月の期間の場合のみ画像を変更
-    if (currentMonth >= 0 && currentMonth <= 4) {
+    if (currentMonth >= 3 && currentMonth <= 4) {
         // 画像の要素を取得して新しい画像のパスに変更
         target.src = newImagePath;
     }
