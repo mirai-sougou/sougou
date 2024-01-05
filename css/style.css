@@ -191,6 +191,10 @@ footer p {
     font-size: 12px;
   }
 
+  .mb-r {
+    margin-bottom: 4px;
+  }
+
 
 
   /* ボタンを縦並びにする */

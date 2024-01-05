@@ -177,6 +177,11 @@ footer p {
     font-size: 9px;
   }
 
+  .mb-r {
+    margin-bottom: 4px;
+  }
+
+
   .button-r {
     font-size: 12px;
   }
