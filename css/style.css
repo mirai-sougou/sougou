@@ -178,6 +178,10 @@ footer p {
 
 
 @media (max-width: 600px) {
+  .menu {
+    font-size: 9px;
+  }
+
   .button-bottom {
     margin-right: 0;
     margin-bottom: 2rem;
