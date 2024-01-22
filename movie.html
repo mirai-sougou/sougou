@@ -1,12 +1,25 @@
-<div class="movie">
-  <video
-    class="w-100 h-100"
-    controls
-    autoplay
-    loop
-    muted
-    style=""
-    src="video/movie.mp4"
-  ></video>
-  https://oku-log.com/blog/background-movie/
+<div class="video_wrapper">
+  <video autoplay muted playsinline loop>
+    <source src="video/Movie.m4v" type="video/mp4">
+  </video>
 </div>
+<style>
+  .video_wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    height: 0;
+    padding-bottom: 45.25%;
+    /* 16:9 のアスペクト比に合わせる場合 */
+    overflow: hidden;
+  }
+
+  .video_wrapper>video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+  }
+</style>
