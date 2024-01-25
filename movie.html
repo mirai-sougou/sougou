@@ -22,4 +22,18 @@
     height: 85%;
     object-fit: cover;
   }
+
+  @media screen and (max-width: 600px) {
+
+    /* スマートフォン向けのスタイル */
+    .video_wrapper {
+      padding-bottom: 75%;
+      margin-bottom: 20px;
+      /* 16:9 のアスペクト比に合わせる場合 */
+    }
+
+    .video_wrapper>video {
+      height: 100%;
+    }
+  }
 </style>

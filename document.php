@@ -284,8 +284,8 @@ try {
 
 
                     <div class="form-group row justify-content-center">
-                        <label for="postalCode" class="col-md-3 col-form-label text-md-right">郵便番号<span class="text-danger"
-                                style="margin-left: 5px;">必須</span></label>
+                        <label for="postalCode" class="col-md-3 col-form-label text-md-right">郵便番号(ハイフンなしで入力してください)<span
+                                class="text-danger" style="margin-left: 5px;">必須</span></label>
                         <div class="col-md-6">
                             <input type="text" class="form-control" id="postalCode" name="postalCode" minlength="7"
                                 maxlength="8" pattern="\d*" autocomplete="shipping postal-code"
