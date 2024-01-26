@@ -39,6 +39,7 @@ $(function () {
 	$("#includedMovie").load("movie.html");
 	$("#IncludedButton-6").load("button-6.html");
 	$("#IncludedButton-shiryou").load("button-shiryou.html");
+	$("#IncludedSlide").load("slideshow.html");
 });
 
 $(document).ready(function () {

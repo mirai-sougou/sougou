@@ -1,3 +1,39 @@
-<div class="bg-primary movie">　
-
+<div class="video_wrapper">
+  <video autoplay muted playsinline loop>
+    <source src="video/Movie.m4v" type="video/mp4">
+  </video>
 </div>
+<style>
+  .video_wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    height: 0;
+    padding-bottom: 53.25%;
+    /* 16:9 のアスペクト比に合わせる場合 */
+    overflow: hidden;
+  }
+
+  .video_wrapper>video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: 600px) {
+
+    /* スマートフォン向けのスタイル */
+    .video_wrapper {
+      padding-bottom: 75%;
+      margin-bottom: 20px;
+      /* 16:9 のアスペクト比に合わせる場合 */
+    }
+
+    .video_wrapper>video {
+      height: 100%;
+    }
+  }
+</style>

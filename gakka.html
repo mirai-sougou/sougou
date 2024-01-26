@@ -1,76 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.min.js"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>総合制作</title>
+    <link href="css/css/bootstrap.min.css" rel="stylesheet" />
+    <link id="stylesheet" rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/snowfall.min.jquery.js"></script>
+    <script src="js/spring.js"></script>
+    
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>総合制作</title>
-  <link href="css/css/bootstrap.min.css" rel="stylesheet" />
-  <link id="stylesheet" rel="stylesheet" href="css/style.css" />
-  <script type="text/javascript" src="js/snowfall.min.jquery.js"></script>
-  <script src="js/spring.js"></script>
-</head>
+  <body>
+    <div id="includedHeader"></div>
+    <div id="IncludedSlide"></div>
+    <div class="wrapper">
+      <main>
+        <h2>学科を選択しよう</h2>
 
-<body>
-  <div id="includedHeader"></div>
-  <div id="includedMovie"></div>
-  <div class="wrapper">
-    <main>
-      <h2>学科を選択しよう</h2>
-
-      <div class="container mt-4 mb-4">
-        <div class="rounded p-2 border">
-          <p>
-            情報未来の３年制課程では、１年次に全員システム開発・ゲーム・ＣＧ・Ｗｅｂの基礎を学び、２年次以降に希望に合わせてコース選択をおこない、なりたい職業に必要なスキルをより深く学びます。それに対して２年制課程では、入学後から全分野（システム開発・ゲーム・ＣＧ・Ｗｅｂ）の基礎からじっくり学ぶことができますので、幅広いスキルを身につけることができます。
-          </p>
-        </div>
-      </div>
-
-      <img src="images/gakka.png" alt="" style="width: 90%;">
-
-
-
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card">
-              <img src="images/画像.png" class="card-img-top" alt="Cardの画像">
-              <div class="card-body bg-primary">
-                <h5 class="card-title text-dark">ITシステムエンジニア学科 (3年生)</h5>
-                <p class="card-text text-dark">3年間でIT・ゲーム・Web・CGの基礎から応用までをじっくり学べます。</p>
-                <a href="itse.html"><button type="button" class="btnbtn-secondary mt-4 mb-4 button-shiryou">
-                    学科詳細ページ ＞
-                  </button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card">
-              <img src="images/画像.png" class="card-img-top" alt="Cardの画像">
-              <div class="card-body" style="background-color: pink;">
-                <h5 class="card-title text-dark">インフォメーションテクノロジー学科
-                  (2年生)</h5>
-                <p class="card-text text-dark">2年間・短期集中でIT・ゲーム・Web・CGが学べるので、幅広いスキルが身に付きます。</p>
-                <a href="it.html"><button type="button" class="btnbtn-secondary mt-4 mb-4 button-shiryou">
-                    学科詳細ページ ＞
-                  </button></a>
-              </div>
-            </div>
+        <div class="container mt-4 mb-4">
+          <div class="rounded p-2 border">
+            <p>
+              情報未来の３年制課程では、１年次に全員システム開発・ゲーム・ＣＧ・Ｗｅｂの基礎を学び、２年次以降に希望に合わせてコース選択をおこない、なりたい職業に必要なスキルをより深く学びます。それに対して２年制課程では、入学後から全分野（システム開発・ゲーム・ＣＧ・Ｗｅｂ）の基礎からじっくり学ぶことができますので、幅広いスキルを身につけることができます。
+            </p>
           </div>
         </div>
-      </div>
 
+        <img src="images/gakka.png" alt="" style="width: 90%" />
 
-      <div id="IncludedButton-shiryou"></div>
-    </main>
-  </div>
-  <div class="hr"></div>
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-6">
+              <a href="itse.html"
+                >
+              <div class="card">
+                <img
+                  src="images/itseshouta.jpg"
+                  class="card-img-top"
+                  alt="Cardの画像"
+                  style="height: 550px"
+                />
+                
+                <div class="card-body bg-primary">
+                  <h5 class="card-title text-dark">
+                    ITシステムエンジニア学科 (3年生)
+                  </h5>
+                  <p class="card-text text-dark">
+                    3年間でIT・ゲーム・Web・CGの基礎から応用までをじっくり学べます。
+                  </p>
+                 <button
+                      type="button"
+                      class="btnbtn-secondary mt-4 mb-4 button-shiryou"
+                    >
+                      学科詳細ページ ＞
+                    </button>
+                </div>
+               
+              </div>
+              </a
+              >
+            </div>
+            <div class="col-md-6">
+              <a href="it.html"
+                    >
+              <div class="card">
+                <img
+                  src="images/ithyou.jpg"
+                  class="card-img-top"
+                  alt="Cardの画像"
+                  style="height: 550px"
+                />
+                <div class="card-body" style="background-color: pink">
+                  <h5 class="card-title text-dark">
+                    インフォメーションテクノロジー学科 (2年生)
+                  </h5>
+                  <p class="card-text text-dark">
+                    2年間・短期集中でIT・ゲーム・Web・CGが学べるので、幅広いスキルが身に付きます。
+                  </p>
+                  <button
+                      type="button"
+                      class="btnbtn-secondary mt-4 mb-4 button-shiryou"
+                    >
+                      学科詳細ページ ＞
+                    </button>
+                </div>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
 
-  <footer>
-    <p>Copyright©Sapporo Joho Mirai</p>
-  </footer>
-  <script src="js/script.js"></script>
-</body>
+        <div id="IncludedButton-shiryou"></div>
+      </main>
+    </div>
+    <div class="hr"></div>
 
+    <footer>
+      <p>Copyright©Sapporo Joho Mirai</p>
+    </footer>
+    <script src="js/script.js"></script>
+  
+  </body>
 </html>
