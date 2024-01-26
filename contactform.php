@@ -145,7 +145,7 @@ try {
 
 <body>
     <div id="includedHeader"></div>
-    <div id="includedMovie"></div>
+    <div id="IncludedSlide"></div>
     <div class="wrapper">
         <main>
 
