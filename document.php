@@ -451,6 +451,7 @@ try {
                     } ?>
                     <div class="button">
                         <input type="submit" name="confirm" value="確認" class="btn btn-primary btn-lg" />
+                        <input type="reset" value="フォームを消去" class="btn btn-secondary btn-lg" />
                     </div>
                 </form>
             <?php } else if ($mode == 'confirm') { ?>
